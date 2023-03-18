@@ -1,4 +1,4 @@
-const cars = ["Tesla model s", "Tesla model 3", "Tesla model x", "Tesla model y", "argument"];
+const cars = ["Tesla model s", "Tesla model 3", "Tesla model x", "Tesla model y"];
 
 let text = "";
 for (let i = 0; i < cars.length; i++) {
@@ -10,14 +10,12 @@ let myText = 'I am a string';
 let newString = myText.replace('string', 'student');
 console.log(newString);
 
-function returnobject() {
-  for (let mebe = 1; ; mebe++) {
-    console.log(mebe + "A");
-      if (mebe == 5) {
-        return{name:argument};
-      }
-      console.log(mebe + "B");
-    }
+function createCar(argument) {
+  return { name: argument };
+}
+
+console.log(createCar("argument"));  }
+
 }
 
 returnobject();
